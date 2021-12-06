@@ -6,7 +6,11 @@ from src.life_insurance.ml.autoboosting.auto_estimator import LightGBMWrapper
 from src.life_insurance.ml.feature_engineering.utils import BMIQuotaFeatureEngineering
 
 
-def train_model(path: pathlib.Path, filename: str, output_path: pathlib.Path,) -> None:
+def train_model(
+    path: pathlib.Path,
+    filename: str,
+    output_path: pathlib.Path,
+) -> None:
 
     path_to_train = path / filename
 
